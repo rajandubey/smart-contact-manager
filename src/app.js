@@ -20,4 +20,8 @@ app.use(
 
 app.use(errorMiddleware);
 
+app.use(cors({
+  origin: '*'
+}));
+
 export default app;
