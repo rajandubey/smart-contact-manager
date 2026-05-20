@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS contacts (
+    id BIGSERIAL PRIMARY KEY,
+
+    full_name VARCHAR(120) NOT NULL,
+
+    phone_number VARCHAR(20) NOT NULL UNIQUE,
+
+    email VARCHAR(120),
+
+    address TEXT,
+
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
